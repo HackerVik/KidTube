@@ -22,8 +22,8 @@ public class VideoserviceApplication {
     @Autowired
     private VideoRepository videoRepository;
 
-    public static void main(String[] args) {
-        SpringApplication.run(VideoserviceApplication.class, args);
+        public static void main(String[] args) {
+            SpringApplication.run(VideoserviceApplication.class, args);
     }
 
     @Bean
