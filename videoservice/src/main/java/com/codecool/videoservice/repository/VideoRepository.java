@@ -1,4 +1,6 @@
 package com.codecool.videoservice.repository;
 
-public interface VideoRepository {
+import com.codecool.videoservice.modell.Video;
+
+public interface VideoRepository extends JpaRepository<Video, Long> {
 }
