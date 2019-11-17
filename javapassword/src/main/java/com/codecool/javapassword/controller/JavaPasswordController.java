@@ -1,5 +1,6 @@
 package com.codecool.javapassword.controller;
 
+import com.codecool.javapassword.modell.Password;
 import com.codecool.javapassword.service.PasswordGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,5 +14,5 @@ public class JavaPasswordController {
     @Autowired
     private PasswordGenerator passwordGenerator;
     @GetMapping()
-    public String generate() {return passwordGenerator.generator();}
+    public Password generate() {return passwordGenerator.generator();}
 }
