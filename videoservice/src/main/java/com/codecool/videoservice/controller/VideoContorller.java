@@ -16,7 +16,7 @@ public class VideoContorller {
     @Autowired
     private VideoRepository videoRepository;
 
-    @GetMapping
+    @GetMapping("/all")
     public List<Video> allVideos() {
         return videoRepository.findAll();
     }
