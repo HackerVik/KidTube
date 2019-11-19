@@ -15,22 +15,22 @@ type Password struct {
 func main() {
 
 	router := mux.NewRouter().StrictSlash(true)
-	router.HandleFunc("/gopassword", Gopassword)
+	router.HandleFunc("/gopassword", gopassword)
 
 	log.Fatal(http.ListenAndServe(":8083", router))
 
 }
 
-func Gopassword(w http.ResponseWriter, r *http.Request) {
-	password := Password{Password:generatepassword()}
+func gopassword(w http.ResponseWriter, r *http.Request) {
+	password := Password{Password: generatepassword()}
 	json.NewEncoder(w).Encode(password)
 
 }
 
 func generatepassword() string {
-	generated:=""
-	for i :=0;i<15;i++{
-		generated+=string(rune(rand.Intn(94)+33))
+	generated := ""
+	for i := 0; i < 15; i++ {
+		generated += string(rune(rand.Intn(94) + 33))
 	}
 	return generated
 }

@@ -16,7 +16,7 @@ public class PasswordGenerator {
         Random random = new Random();
         StringBuilder generatedPassword = new StringBuilder();
         for (int i = 0; i < 15; i++) {
-            generatedPassword.append(Character.toString(random.nextInt(94)+33));
+            generatedPassword.append(Character.toString(random.nextInt(94) + 33));
         }
         password.setPassword(generatedPassword.toString());
         return password;

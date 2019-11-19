@@ -13,6 +13,9 @@ public class JavaPasswordController {
 
     @Autowired
     private PasswordGenerator passwordGenerator;
+
     @GetMapping()
-    public Password generate() {return passwordGenerator.generator();}
+    public Password generate() {
+        return passwordGenerator.generator();
+    }
 }
