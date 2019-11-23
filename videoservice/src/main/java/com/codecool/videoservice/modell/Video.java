@@ -28,4 +28,6 @@ public class Video {
     @NotEmpty
     private String url;
 
+    private boolean ispublic;
+    private String owner;
 }
