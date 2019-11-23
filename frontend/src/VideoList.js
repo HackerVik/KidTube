@@ -1,19 +1,23 @@
-import React from 'react';
+import React, {Component} from 'react';
 import axios from 'axios';
 
-export default class VideoList extends React.Component {
+export default class VideoList extends Component {
     state = {
-        videos : [],
+        videos: [],
     };
 
     componentDidMount() {
-        axios.get('http://localhost:8081/video/all').then(res => {
-            this.setState({videos: res.data});
+        axios.get('http://localhost:8081/video/all').then(response => {
+            this.setState({videos: response.data});
         });
+
     }
 
-    render() {
-        return <ul>{this.state.videos.map(video => (<li>{video.name}</li>))}
-            </ul>;
+    render () {
+        return (
+                <ul>
+                    {this.state.videos.map(video => <li>{video.url}</li>)}
+                </ul>
+        )
     }
 }
