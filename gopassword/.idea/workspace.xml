@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55aa4e67-8156-4fef-9d21-fbf111d8c7b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../pythonpassword/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../db.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../db.trace.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopassword.go" beforeDir="false" afterPath="$PROJECT_DIR$/gopassword.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonpassword/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonpassword/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoservice/src/main/java/com/codecool/videoservice/VideoserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoservice/src/main/java/com/codecool/videoservice/VideoserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoservice/src/main/java/com/codecool/videoservice/modell/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoservice/src/main/java/com/codecool/videoservice/modell/Video.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +73,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

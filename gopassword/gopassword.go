@@ -22,12 +22,12 @@ func main() {
 }
 
 func gopassword(w http.ResponseWriter, r *http.Request) {
-	password := Password{Password: generatepassword()}
+	password := Password{Password: generator()}
 	json.NewEncoder(w).Encode(password)
 
 }
 
-func generatepassword() string {
+func generator() string {
 	generated := ""
 	for i := 0; i < 15; i++ {
 		generated += string(rune(rand.Intn(94) + 33))
