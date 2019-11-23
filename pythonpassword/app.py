@@ -1,5 +1,5 @@
-import random
 import json
+import random
 
 from flask import Flask
 
@@ -11,5 +11,5 @@ def pythonpassword():
     generated = {
         "password": f'{"".join(random.sample([chr(character) for character in range(33, 127)], 15))}'
     }
-    justified = json.dumps(generated)
-    return justified
+    jsondata = json.dumps(generated)
+    return jsondata
