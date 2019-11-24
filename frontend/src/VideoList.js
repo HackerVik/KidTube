@@ -16,7 +16,7 @@ export default class VideoList extends Component {
     render () {
         return (
                 <ul>
-                    {this.state.videos.map(video => <li>{video.url}</li>)}
+                    {this.state.videos.map(video => <li>{video.name}</li>)}
                 </ul>
         )
     }

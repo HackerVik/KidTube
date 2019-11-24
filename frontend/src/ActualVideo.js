@@ -6,7 +6,7 @@ function ActualVideo() {
         <div className="actualVideo">
             <ReactPlayer url='https://www.youtube.com/watch?v=t99ULJjCsaM'
                          controls='true'
-                         width='auto'
+                         width='700px'
             />
         </div>
     )
