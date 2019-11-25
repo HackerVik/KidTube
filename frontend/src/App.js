@@ -1,20 +1,17 @@
 import React from 'react';
-import Header from "./Header";
-import ActualVideo from "./ActualVideo";
-import VideoList from "./VideoList";
-import Navbar from "./Navbar";
+import VideoList from "./components/VideoList";
+import VideoContextProvider from "./context/VideoContext";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 
 function App() {
     return (
         <div className="app">
-            <header className="app-header">
-                <Header/>
-                <Navbar/>
-            </header>
-            <body className="app-body">
-            <ActualVideo/>
-            <VideoList/>
-            </body>
+            <Header/>
+            <Navbar/>
+            <VideoContextProvider>
+                <VideoList/>
+            </VideoContextProvider>
         </div>
     );
 }
