@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.7.0",
+    "@material-ui/icons": "^4.5.1",
     "axios": "^0.19.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-iframe": "^1.8.0",
+    "react-native-thumbnail-video": "^0.1.2",
     "react-player": "^1.14.2",
     "react-scripts": "3.2.0",
+    "react-thumbnail": "^1.0.0",
+    "react-youtube-playlist": "latest",
     "redux": "^4.0.4",
-    "video-react": "^0.14.1",
-    "react-youtube-playlist": "latest"
+    "simple-react-video-thumbnail": "0.0.7",
+    "simple-thumbnail": "^1.6.1",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-video-thumbnail": "^0.1.3"
   }
 }
