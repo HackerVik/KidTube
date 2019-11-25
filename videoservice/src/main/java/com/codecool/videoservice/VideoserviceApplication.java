@@ -37,83 +37,83 @@ public class VideoserviceApplication {
 
             Video video1 = Video.builder()
                     .name("The Animal Sounds Song")
-                    .url("https://www.youtube.com/watch?v=t99ULJjCsaM&list=PL0FDC1DC71E5EDFB4&index=2&t=0s")
+                    .url("https://www.youtube.com/watch?v=t99ULJjCsaM")
                     .build();
             Video video2 = Video.builder()
                     .name("5 Little Ducks")
-                    .url("https://www.youtube.com/watch?v=HOWt5un1-Ts&list=PL0FDC1DC71E5EDFB4&index=3&t=0s")
+                    .url("https://www.youtube.com/watch?v=HOWt5un1-Ts")
                     .build();
             Video video3 = Video.builder()
                     .name("The Wheels On The Bus")
-                    .url("https://www.youtube.com/watch?v=2FI3p79Jq-k&list=PL0FDC1DC71E5EDFB4&index=4&t=0s")
+                    .url("https://www.youtube.com/watch?v=2FI3p79Jq-k")
                     .build();
             Video video4 = Video.builder()
                     .name("It's the Alphabet")
-                    .url("https://www.youtube.com/watch?v=ggyJJ60RbBA&list=PL0FDC1DC71E5EDFB4&index=5&t=0s")
+                    .url("https://www.youtube.com/watch?v=ggyJJ60RbBA")
                     .build();
             Video video5 = Video.builder()
                     .name("The Baby Animals Song")
-                    .url("https://www.youtube.com/watch?v=cJg4YFtvOp8&list=PL0FDC1DC71E5EDFB4&index=6&t=0s")
+                    .url("https://www.youtube.com/watch?v=cJg4YFtvOp8")
                     .build();
             Video video6 = Video.builder()
                     .name("Old MacDonald had a Farm")
-                    .url("https://www.youtube.com/watch?v=vPd7TaUhYTE&list=PL0FDC1DC71E5EDFB4&index=7&t=0s")
+                    .url("https://www.youtube.com/watch?v=vPd7TaUhYTE")
                     .build();
             Video video7 = Video.builder()
                     .name("Counting Song")
-                    .url("https://www.youtube.com/watch?v=6RfIKqkvHTY&list=PL0FDC1DC71E5EDFB4&index=8&t=0s")
+                    .url("https://www.youtube.com/watch?v=6RfIKqkvHTY")
                     .build();
             Video video8 = Video.builder()
                     .name("Shapes Song 2")
-                    .url("https://www.youtube.com/watch?v=WTeqUejf3D0&list=PL0FDC1DC71E5EDFB4&index=9&t=0s")
+                    .url("https://www.youtube.com/watch?v=WTeqUejf3D0")
                     .build();
             Video video9 = Video.builder()
                     .name("On the Farm")
-                    .url("https://www.youtube.com/watch?v=9uuh3zG21ts&list=PL0FDC1DC71E5EDFB4&index=10&t=0s")
+                    .url("https://www.youtube.com/watch?v=9uuh3zG21ts")
                     .build();
             Video video10 = Video.builder()
                     .name("Colors Song")
-                    .url("https://www.youtube.com/watch?v=tQASh8bbkUY&list=PL0FDC1DC71E5EDFB4&index=11&t=0s")
+                    .url("https://www.youtube.com/watch?v=tQASh8bbkUY")
                     .build();
             Video video11 = Video.builder()
                     .name("The Tank You Song")
-                    .url("https://www.youtube.com/watch?v=OcfqDPAy7zc&list=PL0FDC1DC71E5EDFB4&index=12&t=0s")
+                    .url("https://www.youtube.com/watch?v=OcfqDPAy7zc")
                     .build();
             Video video12 = Video.builder()
                     .name("The Planets Song")
-                    .url("https://www.youtube.com/watch?v=Wd_EIdZrvaU&list=PL0FDC1DC71E5EDFB4&index=13&t=0s")
+                    .url("https://www.youtube.com/watch?v=Wd_EIdZrvaU")
                     .build();
             Video video13 = Video.builder()
                     .name("Red Rabbit Green Gorilla")
-                    .url("https://www.youtube.com/watch?v=kxSWGIm2XtI&list=PL0FDC1DC71E5EDFB4&index=14&t=0s")
+                    .url("https://www.youtube.com/watch?v=kxSWGIm2XtI")
                     .build();
             Video video14 = Video.builder()
                     .name("In the Garden Song")
-                    .url("https://www.youtube.com/watch?v=RCClYcU97PA&list=PL0FDC1DC71E5EDFB4&index=15&t=0s")
+                    .url("https://www.youtube.com/watch?v=RCClYcU97PA")
                     .build();
             Video video15 = Video.builder()
                     .name("We are the Alphabet")
-                    .url("https://www.youtube.com/watch?v=w_-lz2BI2Co&list=PL0FDC1DC71E5EDFB4&index=16&t=0s")
+                    .url("https://www.youtube.com/watch?v=w_-lz2BI2Co")
                     .build();
             Video video16 = Video.builder()
                     .name("The 50 States Song")
-                    .url("https://www.youtube.com/watch?v=cMp3-fDL6Do&list=PL0FDC1DC71E5EDFB4&index=17&t=0s")
+                    .url("https://www.youtube.com/watch?v=cMp3-fDL6Do")
                     .build();
             Video video17 = Video.builder()
                     .name("I Love You")
-                    .url("https://www.youtube.com/watch?v=4aG09eyYNpQ&list=PL0FDC1DC71E5EDFB4&index=18&t=0s")
+                    .url("https://www.youtube.com/watch?v=4aG09eyYNpQ")
                     .build();
             Video video18 = Video.builder()
                     .name("Bingo Song")
-                    .url("https://www.youtube.com/watch?v=9mmF8zOlh_g&list=PL0FDC1DC71E5EDFB4&index=19&t=0s")
+                    .url("https://www.youtube.com/watch?v=9mmF8zOlh_g")
                     .build();
             Video video19 = Video.builder()
                     .name("Five Little Monkeys")
-                    .url("https://www.youtube.com/watch?v=ZhODBFQ2-bQ&list=PL0FDC1DC71E5EDFB4&index=22&t=0s")
+                    .url("https://www.youtube.com/watch?v=ZhODBFQ2-bQ")
                     .build();
             Video video20 = Video.builder()
                     .name("The Skeleton Dance")
-                    .url("https://www.youtube.com/watch?v=Jpvuqj5nv6U&list=PL0FDC1DC71E5EDFB4&index=26&t=0s")
+                    .url("https://www.youtube.com/watch?v=Jpvuqj5nv6U")
                     .build();
 
             videoRepository.save(video1);
