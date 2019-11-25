@@ -1,53 +1,10 @@
-.navbar {
-    text-align: center;
-    font-family: Verdana, Arial, sans-serif;
-    padding: .5em;
+.header img{
+    width: 10em;
 }
 
-.navbar li {
-    font-family: Verdana, Arial, sans-serif;
-    list-style: none;
+.header{
+    width: 1000px;
+    padding: 1em;
     display: inline-block;
-    margin: 0em .5em;
-}
-
-.header {
-    font-family: Verdana, Arial, sans-serif;
-    vertical-align: middle;
-    width: auto;
-    color: red;
-    letter-spacing: .01em;
-    text-shadow: .1em .1em .1em #282c34;
-    padding: .5em;
-}
-
-.header button {
-    font-family: Verdana, Arial, sans-serif;
-    height: 1.9em;
-    text-align: center;
-}
-
-.header img {
-    width: 3.5em;
-    padding: .1em;
-    vertical-align: middle;
-    horiz-align: center;
-}
-
-.header input {
-    font-family: Verdana, Arial, sans-serif;
-    height: 1.5em;
-    text-align: right;
-}
-
-.header li {
-    font-family: Verdana, Arial, sans-serif;
-    list-style: none;
-    display: inline-block;
-    margin: 0em .5em;
-}
-
-.actualVideo {
-    margin: 0em 2em;
-    width: auto;
+    background-image: url("background.png");
 }
