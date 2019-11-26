@@ -8,7 +8,7 @@ function VideoList() {
     return (
         <div>
             {videos.map(video => {
-                return (<ImgMediaCard video={video}/>)
+                return (<ImgMediaCard video={video} key={video.id}/>)
             })}
         </div>
     );
