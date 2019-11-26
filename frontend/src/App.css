@@ -1,10 +1,19 @@
-.header img{
-    width: 10em;
-}
-
 .header{
-    width: 1000px;
+    min-width: 90%;
     padding: 1em;
     display: inline-block;
     background-image: url("background.png");
+    color: red;
+    box-shadow: .1em .1em .1em lightgray;
+    text-align: left;
+    font-size: 20px;
+    text-shadow: .1em .1em .1em gray;
+}
+
+.app{
+    text-align: center;
+}
+
+.header img{
+    width: 150px;
 }
