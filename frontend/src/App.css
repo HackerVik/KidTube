@@ -4,10 +4,11 @@
     display: inline-block;
     background-image: url("background.png");
     color: red;
-    box-shadow: .1em .1em .1em lightgray;
+    box-shadow: .05em .1em .1em lightgray;
     text-align: left;
     font-size: 20px;
     text-shadow: .1em .1em .1em gray;
+    border-radius: .2em;
 }
 
 .app{
