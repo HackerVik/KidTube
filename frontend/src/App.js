@@ -8,7 +8,9 @@ function App() {
     return (
         <div className="app">
             <Header/>
-            <Navbar/>
+            <div className="navbar">
+                <Navbar/>
+            </div>
             <VideoContextProvider>
                 <VideoList/>
             </VideoContextProvider>
