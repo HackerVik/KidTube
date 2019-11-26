@@ -5,15 +5,32 @@ import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import Header from "./Header";
+import Backdrop from "@material-ui/core/Backdrop/Backdrop";
+import Fade from "@material-ui/core/Fade";
+import Modal from "@material-ui/core/Modal";
+import InputTextField from "./InputField";
+
+
+const useStylesLogin = makeStyles(theme => ({
+    modal: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    paper: {
+        backgroundColor: theme.palette.background.paper,
+        border: '2px solid lightgrey',
+        boxShadow: theme.shadows[5],
+        padding: theme.spacing(2, 4, 3),
+    },
+}));
+
 
 const useStyles = makeStyles({
     list: {
-        width: 250,
+        width: 'auto',
     },
     fullList: {
         width: 'auto',
@@ -21,6 +38,16 @@ const useStyles = makeStyles({
 });
 
 export default function SwipeableTemporaryDrawer() {
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpenLogin = () => {
+        setOpen(true);
+    };
+
+    const handleCloseLogin = () => {
+        setOpen(false);
+    };
+    const classesLogin = useStylesLogin();
     const classes = useStyles();
     const [state, setState] = React.useState({
         top: false,
@@ -47,18 +74,45 @@ export default function SwipeableTemporaryDrawer() {
             <Header/>
             <Divider/>
             <List>
-                {['Login', 'Logout', 'Register'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>
-                        <ListItemText primary={text}/>
-                    </ListItem>
-                ))}
+                <ListItem onClick={handleOpenLogin} button key="Login">
+                    <ListItemText primary="Login"/>
+                </ListItem>
+                <ListItem button key="Logout">
+                    <ListItemText primary="Logout"/>
+                </ListItem>
+                <ListItem button key="Register">
+                    <ListItemText primary="Register"/>
+                </ListItem>
             </List>
         </div>
     );
 
     return (
         <div>
+            <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                className={classesLogin.modal}
+                open={open}
+                onClose={handleCloseLogin}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                    timeout: 500,
+                }}
+            >
+                <Fade in={open}>
+                    <div className={classesLogin.paper}>
+                        <h2 id="transition-modal-title">Login</h2>
+                        <Divider/>
+                        <InputTextField label={'Username'} helpertext={'Your username'}/>
+                        <InputTextField label={'Password'} helpertext={'Your password'}/>
+                    </div>
+                </Fade>
+            </Modal>
+
+
+
             <Button onClick={toggleDrawer('right', true)}>Menu</Button>
             <input type="text" placeholder="Search.."/>
             <SwipeableDrawer
