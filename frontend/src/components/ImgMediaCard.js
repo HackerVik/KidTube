@@ -10,7 +10,7 @@ import ReactPlayer from "react-player";
 
 const useStyles = makeStyles({
     card: {
-        maxWidth: 672,
+        maxWidth: 'auto',
         margin: 10,
     },
 });
@@ -26,7 +26,7 @@ export default function ImgMediaCard(props) {
                         {video.name}
                     </Typography>
                     <div className="videobox">
-                        <ReactPlayer url={video.url} light={true} controls={true}/>
+                        <ReactPlayer url={video.url} light={true} controls={true} width={'auto'}/>
                     </div>
                 </CardContent>
             </CardActionArea>
