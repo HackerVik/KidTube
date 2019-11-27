@@ -19,25 +19,27 @@ export default function ImgMediaCard(props) {
     const classes = useStyles();
     const {video} = props;
     return (
-        <Card className={classes.card}>
-            <CardActionArea>
-                <CardContent>
-                    <Typography gutterBottom variant="h6" component="h2">
-                        {video.name}
-                    </Typography>
-                    <div className="videobox">
-                        <ReactPlayer url={video.url} light={true} controls={true} width={'auto'}/>
-                    </div>
-                </CardContent>
-            </CardActionArea>
-            <CardActions>
-                <Button size="small" color="primary">
-                    Like
-                </Button><Button size="small" color="primary">
-                Dislike
-            </Button>
-                <p>0</p>
-            </CardActions>
-        </Card>
+        <div className="video-grid-item">
+            <Card className={classes.card}>
+                <CardActionArea>
+                    <CardContent>
+                        <Typography gutterBottom variant="h6" component="h2">
+                            {video.name}
+                        </Typography>
+                        <div className="videobox">
+                            <ReactPlayer url={video.url} light={true} controls={true} width={'auto'}/>
+                        </div>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button size="small" color="primary">
+                        Like
+                    </Button><Button size="small" color="primary">
+                    Dislike
+                </Button>
+                    <p>0</p>
+                </CardActions>
+            </Card>
+        </div>
     );
 }
