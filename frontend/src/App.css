@@ -1,26 +1,28 @@
+.app {
+    text-align: center;
+}
+
 .header {
     min-width: 90%;
     min-height: 15em;
     padding: 1em;
     background-image: url("background.png");
-    box-shadow: .05em .1em .1em lightgray;
-    border-radius: .2em;
     opacity: .8;
-}
-
-.app {
-    text-align: center;
 }
 
 .video-grid-container {
     display: grid;
-    margin: 1em;
+    padding: 1em;
 }
 
 .video-grid-item {
     vertical-align: middle;
     display: inline-block;
     width: 20em;
+}
+
+.navbar {
+    alignment: center;
 }
 
 .navbar-grid-container {
@@ -34,8 +36,17 @@
     width: 8em;
 }
 
-.navbar {
-    alignment: center;
+.searchbar-grid-container{
+    position: absolute;
+    display: grid;
+    border: 1px solid lightgray;
+    border-radius: .3em;
+    margin: 1em;
+}
+
+.searchbar-grid-item{
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .logo {
@@ -43,8 +54,4 @@
     color: red;
     text-shadow: .1em .1em .1em lightgray;
     font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
-}
-
-.logo img {
-    width: 10em;
 }
