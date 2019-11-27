@@ -3,7 +3,7 @@ import ImgMediaCard from "./ImgMediaCard";
 import {videocontext} from "../context/VideoContext";
 
 function VideoList() {
-    const {videos, search} = useContext(videocontext);
+    const {videos} = useContext(videocontext);
     return (
         <div className="videocontainer">
             {videos.map(video => {
