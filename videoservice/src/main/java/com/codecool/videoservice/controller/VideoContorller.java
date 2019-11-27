@@ -3,10 +3,7 @@ package com.codecool.videoservice.controller;
 import com.codecool.videoservice.modell.Video;
 import com.codecool.videoservice.repository.VideoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,4 +19,7 @@ public class VideoContorller {
     public List<Video> allVideos() {
         return videoRepository.findAll();
     }
+
+    @GetMapping("/search/{search}")
+    public List<Video> searchVideos(@PathVariable("search")String search) {return videoRepository.findAllByNameContainsIgnoreCase(search);}
 }
