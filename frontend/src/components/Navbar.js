@@ -16,7 +16,7 @@ import SearchBar from "./SearchBar";
 import Logo from "./Logo";
 
 
-const useStylesLogin = makeStyles(theme => ({
+const useStyles = makeStyles(theme => ({
     modal: {
         display: 'flex',
         alignItems: 'center',
@@ -28,37 +28,27 @@ const useStylesLogin = makeStyles(theme => ({
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
     },
-}));
-
-
-const useStyles = makeStyles({
     list: {
         width: 'auto',
     },
     fullList: {
         width: 'auto',
     },
-});
+}));
 
 export default function SwipeableTemporaryDrawer() {
     const [open, setOpen] = React.useState(false);
-
     const handleOpenLogin = () => {
         setOpen(true);
     };
-
     const handleCloseLogin = () => {
         setOpen(false);
     };
-    const classesLogin = useStylesLogin();
+    const classesLogin = useStyles();
     const classes = useStyles();
     const [state, setState] = React.useState({
-        top: false,
-        left: false,
-        bottom: false,
         right: false,
     });
-
     const toggleDrawer = (side, open) => event => {
         if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return;
@@ -66,7 +56,6 @@ export default function SwipeableTemporaryDrawer() {
 
         setState({...state, [side]: open});
     };
-
     const sideList = side => (
         <div
             className={classes.list}
@@ -114,14 +103,15 @@ export default function SwipeableTemporaryDrawer() {
                 </Fade>
             </Modal>
             <div className="navbar-grid-item">
+                <Logo/>
+            </div>
+            <div className="navbar-grid-item">
                 <Button disableFocusRipple={true} fullWidth={true} size={"large"} variant={"outlined"}
                         onClick={toggleDrawer('right', true)}>Menu</Button></div>
             <div className="navbar-grid-item">
                 <SortSelect/></div>
-            <div className="navbar-grid-item"><SearchBar/></div>
             <div className="navbar-grid-item">
-                <Logo/>
-            </div>
+                <SearchBar/></div>
             <SwipeableDrawer
                 anchor="right"
                 open={state.right}
