@@ -8,14 +8,17 @@ function App() {
     return (
         <div className="app">
             <Header/>
-            <div className="navbar">
-                <Navbar/>
-            </div>
             <VideoContextProvider>
-                <VideoList/>
+                <div className="navbar">
+                    <Navbar/>
+                </div>
+                <div className="video-grid-container">
+                    <VideoList/>
+                </div>
             </VideoContextProvider>
         </div>
-    );
+    )
+        ;
 }
 
 export default App;
