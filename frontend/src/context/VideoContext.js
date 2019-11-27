@@ -30,7 +30,6 @@ export default function VideoContext(props) {
         });
     };
 
-
     return (
         <videocontext.Provider value={{videos, dispatch, search, fetchdata}}>
             {props.children}</videocontext.Provider>
