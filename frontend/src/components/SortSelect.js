@@ -45,9 +45,8 @@ export default function SortSelect() {
                     <MenuItem value="">
                         <em>None</em>
                     </MenuItem>
-                    <MenuItem value={10}>View</MenuItem>
-                    <MenuItem value={20}>Popularity</MenuItem>
-                    <MenuItem value={30}>Uploaded</MenuItem>
+                    <MenuItem value={10}>Name</MenuItem>
+                    <MenuItem value={20}>Uploaded</MenuItem>
                 </Select>
             </FormControl>
         </div>
