@@ -1,20 +1,50 @@
-.header{
+.header {
     min-width: 90%;
+    min-height: 15em;
     padding: 1em;
-    display: inline-block;
     background-image: url("background.png");
-    color: red;
     box-shadow: .05em .1em .1em lightgray;
-    text-align: left;
-    font-size: 20px;
-    text-shadow: .1em .1em .1em gray;
     border-radius: .2em;
+    opacity: .8;
 }
 
-.app{
+.app {
     text-align: center;
 }
 
-.header img{
-    width: 150px;
+.video-grid-container {
+    display: grid;
+    margin: 1em;
+}
+
+.video-grid-item {
+    vertical-align: middle;
+    display: inline-block;
+    width: 20em;
+}
+
+.navbar-grid-container {
+    display: inline-block;
+    margin: 1em;
+}
+
+.navbar-grid-item {
+    vertical-align: middle;
+    display: inline-block;
+    width: 8em;
+}
+
+.navbar {
+    alignment: center;
+}
+
+.logo {
+    margin: 1em;
+    color: red;
+    text-shadow: .1em .1em .1em lightgray;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+}
+
+.logo img {
+    width: 10em;
 }
