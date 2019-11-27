@@ -11,6 +11,9 @@ import Backdrop from "@material-ui/core/Backdrop/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Modal from "@material-ui/core/Modal";
 import InputTextField from "./InputField";
+import SortSelect from "./SortSelect";
+import SearchBar from "./SearchBar";
+import Logo from "./Logo";
 
 
 const useStylesLogin = makeStyles(theme => ({
@@ -88,7 +91,7 @@ export default function SwipeableTemporaryDrawer() {
     );
 
     return (
-        <div>
+        <div className="navbar-grid-container">
             <Modal
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"
@@ -110,11 +113,15 @@ export default function SwipeableTemporaryDrawer() {
                     </div>
                 </Fade>
             </Modal>
-
-
-
-            <Button onClick={toggleDrawer('right', true)}>Menu</Button>
-            <input type="text" placeholder="Search.."/>
+            <div className="navbar-grid-item">
+                <Button disableFocusRipple={true} fullWidth={true} size={"large"} variant={"outlined"}
+                        onClick={toggleDrawer('right', true)}>Menu</Button></div>
+            <div className="navbar-grid-item">
+                <SortSelect/></div>
+            <div className="navbar-grid-item"><SearchBar/></div>
+            <div className="navbar-grid-item">
+                <Logo/>
+            </div>
             <SwipeableDrawer
                 anchor="right"
                 open={state.right}
