@@ -21,9 +21,18 @@ export default function VideoContext(props) {
     };
     useEffect(() => {
         fetchdata()
-    },[]);
+    }, []);
+
+    const search = (searchString) => {
+        axios.get('http://' + process.env.REACT_APP_CLIENT_IP + ':8081/video/search/' + searchString).then(response => {
+            const data = response.data;
+            dispatch({type: 'initialdata', data})
+        });
+    };
+
+
     return (
-        <videocontext.Provider value={{videos, dispatch}}>
+        <videocontext.Provider value={{videos, dispatch, search, fetchdata}}>
             {props.children}</videocontext.Provider>
     );
 }
