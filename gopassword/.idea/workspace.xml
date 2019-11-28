@@ -4,14 +4,11 @@
     <list default="true" id="55aa4e67-8156-4fef-9d21-fbf111d8c7b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../db.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../db.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/ActualVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/VideoPlayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/VideoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/VideoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/ImgMediaCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/ImgMediaCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/InputField.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/InputField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/SortSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/SortSelect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

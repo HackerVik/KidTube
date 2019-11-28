@@ -7,5 +7,13 @@ import java.util.List;
 
 
 public interface VideoRepository extends JpaRepository<Video, Long> {
-    List<Video> findAllByNameContainsIgnoreCase (String search);
+    List<Video> findAllByNameContainsIgnoreCase(String search);
+
+    List<Video> findAllByOrderByNameAsc();
+
+    List<Video> findAllByOrderByNameDesc();
+
+    List<Video> findAllByOrderByIdAsc();
+
+    List<Video> findAllByOrderByIdDesc();
 }
