@@ -21,5 +21,22 @@ public class VideoContorller {
     }
 
     @GetMapping("/search/{search}")
-    public List<Video> searchVideos(@PathVariable("search")String search) {return videoRepository.findAllByNameContainsIgnoreCase(search);}
+    public List<Video> searchVideos(@PathVariable("search") String search) {
+        return videoRepository.findAllByNameContainsIgnoreCase(search);
+    }
+
+    @GetMapping("/sort/{sortKey}")
+    public List<Video> sortVideos(@PathVariable("sortKey") String sortKey) {
+        switch (sortKey.toLowerCase()) {
+            case "nameasc":
+                return videoRepository.findAllByOrderByNameAsc();
+            case "idasc":
+                return videoRepository.findAllByOrderByIdAsc();
+            case "namedesc":
+                return videoRepository.findAllByOrderByNameDesc();
+            case "iddesc":
+                return videoRepository.findAllByOrderByIdDesc();
+        }
+        return null;
+    }
 }
