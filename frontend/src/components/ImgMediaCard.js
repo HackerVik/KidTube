@@ -11,7 +11,7 @@ import ReactPlayer from "react-player";
 const useStyles = makeStyles({
     card: {
         maxWidth: 'auto',
-        margin: 10,
+        margin: '.5em',
     },
 });
 
