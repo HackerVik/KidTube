@@ -30,9 +30,11 @@ const useStyles = makeStyles(theme => ({
     },
     list: {
         width: 'auto',
+        align: 'center'
     },
     fullList: {
         width: 'auto',
+        align: 'center'
     },
 }));
 
@@ -59,7 +61,6 @@ export default function SwipeableTemporaryDrawer() {
     const sideList = side => (
         <div
             className={classes.list}
-            role="presentation"
             onClick={toggleDrawer(side, false)}
             onKeyDown={toggleDrawer(side, false)}
         >
@@ -80,10 +81,9 @@ export default function SwipeableTemporaryDrawer() {
     );
 
     return (
-        <div className="navbar-grid-container">
+        <div>
             <Modal
-                aria-labelledby="transition-modal-title"
-                aria-describedby="transition-modal-description"
+                aria-labelledby="login-modal"
                 className={classesLogin.modal}
                 open={open}
                 onClose={handleCloseLogin}
@@ -95,23 +95,13 @@ export default function SwipeableTemporaryDrawer() {
             >
                 <Fade in={open}>
                     <div className={classesLogin.paper}>
-                        <h2 id="transition-modal-title">Login</h2>
+                        <h2 id="login-modal">Login</h2>
                         <Divider/>
                         <InputTextField label={'Username'} helpertext={'Your username'}/>
                         <InputTextField label={'Password'} helpertext={'Your password'}/>
                     </div>
                 </Fade>
             </Modal>
-            <div className="navbar-grid-item">
-                <Logo/>
-            </div>
-            <div className="navbar-grid-item">
-                <Button disableFocusRipple={true} fullWidth={true} size={"large"} variant={"outlined"}
-                        onClick={toggleDrawer('right', true)}>Menu</Button></div>
-            <div className="navbar-grid-item">
-                <SortSelect/></div>
-            <div className="navbar-grid-item">
-                <SearchBar/></div>
             <SwipeableDrawer
                 anchor="right"
                 open={state.right}
@@ -120,6 +110,14 @@ export default function SwipeableTemporaryDrawer() {
             >
                 {sideList('right')}
             </SwipeableDrawer>
+            <div className="navbar-grid-container">
+                <div className="navbar-grid-item"><Logo/></div>
+                <div className="navbar-grid-item">
+                    <Button disableFocusRipple={true} fullWidth={true} size={"large"} variant={"outlined"}
+                            onClick={toggleDrawer('right', true)}>Menu</Button></div>
+                <div className="navbar-grid-item"><SortSelect/></div>
+                <div className="navbar-grid-item"><SearchBar/></div>
+            </div>
         </div>
     );
 }
