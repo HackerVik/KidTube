@@ -9,8 +9,6 @@ export default function SearchBar() {
     const searchClick = () => {
         searchString.length > 0 ? search(searchString) : fetchdata()
     };
-
-
     return (
         <div className="searchbar-grid-container">
             <form>
