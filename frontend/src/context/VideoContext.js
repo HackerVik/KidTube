@@ -5,6 +5,9 @@ import videoreducer from "../reducer/VideoReducer";
 export const videocontext = createContext();
 
 export default function VideoContext(props) {
+    useEffect(() => {
+        fetchdata()
+    }, []);
     const initialState = [{
         id: 0,
         name: '',
@@ -19,19 +22,20 @@ export default function VideoContext(props) {
             dispatch({type: 'initialdata', data})
         });
     };
-    useEffect(() => {
-        fetchdata()
-    }, []);
-
     const search = (searchString) => {
         axios.get('http://' + process.env.REACT_APP_CLIENT_IP + ':8081/video/search/' + searchString).then(response => {
             const data = response.data;
             dispatch({type: 'initialdata', data})
         });
     };
-
+    const sort = (sortString) => {
+        axios.get('http://' + process.env.REACT_APP_CLIENT_IP + ':8081/video/sort/' + sortString).then(response => {
+            const data = response.data;
+            dispatch({type: 'initialdata', data})
+        });
+    };
     return (
-        <videocontext.Provider value={{videos, dispatch, search, fetchdata}}>
+        <videocontext.Provider value={{videos, dispatch, search, fetchdata, sort}}>
             {props.children}</videocontext.Provider>
     );
 }
