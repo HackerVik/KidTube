@@ -1,53 +1,65 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import {videocontext} from "../context/VideoContext";
 
 const useStyles = makeStyles(theme => ({
     formControl: {
         margin: theme.spacing(1),
-        minWidth: '8em',
+        minWidth: 120,
     },
     selectEmpty: {
         marginTop: theme.spacing(2),
     },
 }));
-
-export default function SortSelect() {
+export default function NativeSelects() {
     const classes = useStyles();
-    const [age, setAge] = React.useState('');
-
+    const [state, setState] = React.useState({
+        age: '',
+        name: 'hai',
+    });
     const inputLabel = React.useRef(null);
     const [labelWidth, setLabelWidth] = React.useState(0);
     React.useEffect(() => {
         setLabelWidth(inputLabel.current.offsetWidth);
     }, []);
-
-    const handleChange = event => {
-        setAge(event.target.value);
+    const handleChange = name => event => {
+        setState({
+            ...state,
+            [name]: event.target.value,
+        });
     };
+    const {sort} = useContext(videocontext);
+    React.useEffect(() => {
+        setLabelWidth(inputLabel.current.offsetWidth);
+    }, []);
+
+    function handleSearch(value) {
+        sort(value);
+    }
 
     return (
-        <div className="navbar-grid-item">
+        <div>
             <FormControl variant="outlined" className={classes.formControl}>
-                <InputLabel ref={inputLabel} id="demo-simple-select-outlined-label">
+                <InputLabel ref={inputLabel} htmlFor="outlined-age-native-simple">
                     Sort by
                 </InputLabel>
                 <Select
-                    labelId="demo-simple-select-outlined-label"
-                    id="demo-simple-select-outlined"
-                    value={age}
-                    onChange={handleChange}
+                    native
+                    onChange={handleChange('age')}
+                    onClick={(e) => handleSearch(e.target.value)}
                     labelWidth={labelWidth}
                 >
-                    <MenuItem value="">
-                        <em>None</em>
-                    </MenuItem>
-                    <MenuItem value={10}>Name</MenuItem>
-                    <MenuItem value={20}>Uploaded</MenuItem>
+                    <option value="nameasc">Name asc</option>
+                    <option value="namedesc">Name desc</option>
+                    <option value="idasc">Uploaded asc</option>
+                    <option value="iddesc">Uploaded desc</option>
                 </Select>
+            </FormControl>
+            <FormControl variant="filled" className={classes.formControl}>
+                <InputLabel htmlFor="filled-age-native-simple">Age</InputLabel>
             </FormControl>
         </div>
     );
