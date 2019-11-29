@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
 export default function NativeSelects() {
     const classes = useStyles();
     const [state, setState] = React.useState({
-        age: '',
+        sort: '',
         name: 'hai',
     });
     const inputLabel = React.useRef(null);
@@ -51,7 +51,6 @@ export default function NativeSelects() {
                     onClick={(e) => handleSearch(e.target.value)}
                     labelWidth={labelWidth}
                 >
-                    <option value=""/>
                     <option value="nameasc">Name asc</option>
                     <option value="namedesc">Name desc</option>
                     <option value="idasc">Uploaded asc</option>
