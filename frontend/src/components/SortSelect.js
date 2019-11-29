@@ -35,7 +35,6 @@ export default function NativeSelects() {
     React.useEffect(() => {
         setLabelWidth(inputLabel.current.offsetWidth);
     }, []);
-
     function handleSearch(value) {
         sort(value);
     }
@@ -58,9 +57,6 @@ export default function NativeSelects() {
                     <option value="idasc">Uploaded asc</option>
                     <option value="iddesc">Uploaded desc</option>
                 </Select>
-            </FormControl>
-            <FormControl variant="filled" className={classes.formControl}>
-                <InputLabel htmlFor="filled-age-native-simple">Age</InputLabel>
             </FormControl>
         </div>
     );
