@@ -25,17 +25,6 @@
     alignment: center;
 }
 
-.navbar-grid-container {
-    display: inline-block;
-    margin: 1em;
-}
-
-.navbar-grid-item {
-    vertical-align: middle;
-    display: inline-block;
-    width: 8em;
-}
-
 .searchbar-grid-container{
     position: absolute;
     display: grid;

@@ -110,13 +110,12 @@ export default function SwipeableTemporaryDrawer() {
             >
                 {sideList('right')}
             </SwipeableDrawer>
-            <div className="navbar-grid-container">
-                <div className="navbar-grid-item"><Logo/></div>
-                <div className="navbar-grid-item">
-                    <Button disableFocusRipple={true} fullWidth={true} size={"large"} variant={"outlined"}
-                            onClick={toggleDrawer('right', true)}>Menu</Button></div>
-                <div className="navbar-grid-item"><SortSelect/></div>
-                <div className="navbar-grid-item"><SearchBar/></div>
+            <div>
+                <Logo/>
+                <Button disableFocusRipple={true} fullWidth={true} size={"large"} variant={"outlined"}
+                            onClick={toggleDrawer('right', true)}>Menu</Button>
+                <SortSelect/>
+                <SearchBar/>
             </div>
         </div>
     );
