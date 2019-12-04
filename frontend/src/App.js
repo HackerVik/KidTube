@@ -3,16 +3,22 @@ import VideoList from "./components/VideoList";
 import VideoContextProvider from "./context/VideoContext";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import {makeStyles} from "@material-ui/core";
+
+const useStyles = makeStyles(theme => ({
+    videocontainer: {
+        flexGrow: 1,
+    },
+}));
 
 function App() {
+    const classes = useStyles();
     return (
         <div className="app">
             <Header/>
             <VideoContextProvider>
-                <div className="navbar">
-                    <Navbar/>
-                </div>
-                <div className="video-grid-container">
+                <Navbar/>
+                <div className={classes.videocontainer}>
                     <VideoList/>
                 </div>
             </VideoContextProvider>
