@@ -6,6 +6,9 @@ import Select from '@material-ui/core/Select';
 import {videocontext} from "../context/VideoContext";
 
 const useStyles = makeStyles(theme => ({
+    root: {
+        flexGrow: 1,
+    },
     formControl: {
         margin: theme.spacing(1),
         minWidth: 120,
@@ -35,12 +38,13 @@ export default function NativeSelects() {
     React.useEffect(() => {
         setLabelWidth(inputLabel.current.offsetWidth);
     }, []);
+
     function handleSearch(value) {
         sort(value);
     }
 
     return (
-        <div>
+        <div className={classes.root}>
             <FormControl variant="outlined" className={classes.formControl}>
                 <InputLabel ref={inputLabel} htmlFor="outlined-age-native-simple">
                     Sort by

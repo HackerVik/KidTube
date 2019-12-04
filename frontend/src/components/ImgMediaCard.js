@@ -12,14 +12,19 @@ const useStyles = makeStyles({
     card: {
         maxWidth: 'auto',
         margin: '.5em',
-    },
+},
+    root: {
+        align: 'middle',
+        display: 'inline-block',
+        width: '20em',
+},
 });
 
 export default function ImgMediaCard(props) {
     const classes = useStyles();
     const {video} = props;
     return (
-        <div className="video-grid-item">
+        <div className={classes.root}>
             <Card className={classes.card}>
                 <CardActionArea>
                     <CardContent>

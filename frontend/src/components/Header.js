@@ -1,10 +1,21 @@
 import React from 'react';
 import '../App.css';
+import {makeStyles} from "@material-ui/core";
+import background from '../background.png';
 
-function Header() {
+const useStyles = makeStyles(theme => ({
+    root: {
+        width: '100%',
+        height: '8em',
+        padding: '1em',
+        opacity: '.8',
+        backgroundImage: `url(${background})`,
+    },
+}));
+
+export default function Header() {
+    const classes = useStyles();
     return (
-        <div className="header"/>
+        <div className={classes.root}/>
     );
 }
-
-export default Header;
