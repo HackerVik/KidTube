@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55aa4e67-8156-4fef-9d21-fbf111d8c7b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/NewNavBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonpassword/ec.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../db.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../db.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Logo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopassword.go" beforeDir="false" afterPath="$PROJECT_DIR$/gopassword.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
