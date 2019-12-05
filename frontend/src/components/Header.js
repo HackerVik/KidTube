@@ -5,7 +5,7 @@ import background from '../background.png';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        width: '100%',
+        width: 'auto',
         height: '8em',
         padding: '1em',
         opacity: '.8',
