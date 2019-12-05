@@ -9,9 +9,9 @@ import Header from "./Header";
 import Backdrop from "@material-ui/core/Backdrop/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Modal from "@material-ui/core/Modal";
-import InputTextField from "./InputField";
-import SortSelect from "./SortSelect";
-import SearchBar from "./SearchBar";
+import InputTextField from "./InputTextField";
+import SortSelect from "./Sort";
+import Search from "./Search";
 import AppBar from "@material-ui/core/AppBar/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -87,9 +87,19 @@ const useStyles = makeStyles(theme => ({
             display: 'none',
         },
     },
+    paper: {
+        backgroundColor: 'white',
+        width: '25em',
+    },
+    modal: {
+        display: 'flex',
+        padding: theme.spacing(1),
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 }));
 
-export default function SwipeableTemporaryDrawer() {
+export default function NavBar() {
     const [open, setOpen] = React.useState(false);
     const handleOpenLogin = () => {
         setOpen(true);
@@ -174,7 +184,7 @@ export default function SwipeableTemporaryDrawer() {
                             <DehazeIcon/></IconButton><MenuIcon/>
                         <Typography className={classes.title} variant="h6" noWrap>KidTube</Typography>
                         <SortSelect/>
-                        <SearchBar/>
+                        <Search/>
                     </Toolbar>
                 </AppBar>
             </div>

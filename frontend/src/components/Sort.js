@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
         marginTop: theme.spacing(2),
     },
 }));
-export default function NativeSelects() {
+export default function Sort() {
     const classes = useStyles();
     const [state, setState] = React.useState({
         sort: '',

@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import ImgMediaCard from "./ImgMediaCard";
+import Video from "./Video";
 import {videocontext} from "../context/VideoContext";
 import {makeStyles} from "@material-ui/core";
 
@@ -15,7 +15,7 @@ function VideoList() {
     return (
         <div className={classes.root}>
             {videos.map(video => {
-                return (<ImgMediaCard video={video} key={video.id}/>)
+                return (<Video video={video} key={video.id}/>)
             })}
         </div>
     );

@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 },
 });
 
-export default function ImgMediaCard(props) {
+export default function Video(props) {
     const classes = useStyles();
     const {video} = props;
     return (

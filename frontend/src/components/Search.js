@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default function SearchBar() {
+export default function Search() {
     const classes = useStyles();
     const [searchString, setSearch] = useState("");
     const {search, fetchdata} = useContext(videocontext);
