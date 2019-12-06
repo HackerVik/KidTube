@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import {makeStyles} from "@material-ui/core";
 import background from '../background.png';
 
@@ -8,7 +7,7 @@ const useStyles = makeStyles(theme => ({
         width: 'auto',
         height: '8em',
         padding: '1em',
-        opacity: '.8',
+        opacity: '.65',
         backgroundImage: `url(${background})`,
     },
 }));
