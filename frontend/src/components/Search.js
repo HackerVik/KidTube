@@ -5,19 +5,11 @@ import SearchIcon from "@material-ui/icons/Search";
 
 const useStyles = makeStyles(theme => ({
     root: {
-        display: 'grid',
-    },
-    item: {
-        height: '3.4em',
-        align: 'middle',
-        display: 'inline-block',
         border: '1px solid lightgrey',
         borderRadius: '.3em',
-        paddingLeft: '1em',
-    },
-    itemIcon: {
-        align: 'middle',
-        display: 'inline-block',
+        display: 'flex',
+        padding: '.7em',
+        width: '6em',
     },
 }));
 
@@ -31,14 +23,10 @@ export default function Search() {
     return (
         <div className={classes.root}>
             <form>
-                <div className={classes.item}>
-                    <InputBase placeholder="Search" onChange={(e) => setSearch(e.target.value)}
-                               inputProps={{'aria-label': 'search'}}/>
-                    <div className={classes.itemIcon}>
-                        <SearchIcon onClick={searchClick}/>
-                    </div>
-                </div>
+                <InputBase placeholder="Search" onChange={(e) => setSearch(e.target.value)}
+                           inputProps={{'aria-label': 'search'}}/>
             </form>
+            <SearchIcon onClick={searchClick}/>
         </div>
     );
 }
