@@ -4,11 +4,10 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import ReactPlayer from "react-player";
-import SentimentSatisfiedIcon from '@material-ui/icons/SentimentSatisfied';
-import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
+import VideoRating from "./VideoRating";
+
 
 const useStyles = makeStyles({
     card: {
@@ -39,12 +38,7 @@ export default function Video(props) {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary">
-                        <SentimentSatisfiedIcon/>
-                    </Button><Button size="small" color="primary">
-                    <SentimentDissatisfiedIcon/>
-                </Button>
-                    <p>0</p>
+                    <VideoRating/>
                 </CardActions>
             </Card>
         </div>
