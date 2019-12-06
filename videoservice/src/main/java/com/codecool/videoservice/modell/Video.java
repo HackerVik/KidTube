@@ -30,4 +30,5 @@ public class Video {
 
     private boolean ispublic;
     private String owner;
+    private Integer rating;
 }
