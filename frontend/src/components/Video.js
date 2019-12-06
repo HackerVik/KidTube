@@ -1,23 +1,25 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import ReactPlayer from "react-player";
 import VideoRating from "./VideoRating";
 
 
 const useStyles = makeStyles({
-    card: {
-        maxWidth: 'auto',
-        margin: '.5em',
-    },
     root: {
         align: 'middle',
         display: 'inline-block',
         width: '20em',
+    },
+    card: {
+        maxWidth: 'auto',
+        margin: '.5em',
+    },
+    video: {
+        width: '17em',
+        height: '23em',
+        padding: '1em',
     },
 });
 
@@ -27,19 +29,13 @@ export default function Video(props) {
     return (
         <div className={classes.root}>
             <Card className={classes.card}>
-                <CardActionArea>
-                    <CardContent>
-                        <Typography gutterBottom variant="h6" component="h2">
-                            {video.name}
-                        </Typography>
-                        <div className="videobox">
-                            <ReactPlayer url={video.url} light={true} controls={true} width={'auto'}/>
-                        </div>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <VideoRating/>
-                </CardActions>
+                <Typography gutterBottom variant="h5" component="h2">
+                    {video.name}
+                </Typography>
+                <div className={classes.video}>
+                    <ReactPlayer url={video.url} light={true} controls={true} width={'auto'}/>
+                </div>
+                <VideoRating/>
             </Card>
         </div>
     );
