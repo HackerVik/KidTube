@@ -7,7 +7,6 @@ import {videocontext} from "../context/VideoContext";
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flexGrow: 1,
     },
     formControl: {
         margin: theme.spacing(1),
