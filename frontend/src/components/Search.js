@@ -5,11 +5,19 @@ import SearchIcon from "@material-ui/icons/Search";
 
 const useStyles = makeStyles(theme => ({
     root: {
+        margin: theme.spacing(1),
+        fontFamily: 'Arial, Helvetica, sans-serif',
+        fontSize: '.7em',
+        color: 'grey',
+        backgroundColor: '#fff',
         border: '1px solid lightgrey',
         borderRadius: '.3em',
         display: 'flex',
         padding: '.7em',
-        width: '6em',
+        width: '7em',
+        '&:hover': {
+            border: '2px solid #2c57b2',
+        }
     },
 }));
 
