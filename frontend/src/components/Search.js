@@ -13,10 +13,10 @@ const useStyles = makeStyles(theme => ({
         border: '1px solid lightgrey',
         borderRadius: '.3em',
         display: 'flex',
-        padding: '.7em',
-        width: '7em',
+        padding: '.65em',
+        width: '9em',
         '&:hover': {
-            border: '2px solid #2c57b2',
+            border: '2px solid lightblue',
         }
     },
 }));

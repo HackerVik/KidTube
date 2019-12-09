@@ -1,6 +1,5 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
 import ReactPlayer from "react-player";
 import VideoRating from "./VideoRating";
 
@@ -16,9 +15,10 @@ const useStyles = makeStyles({
         margin: '.5em',
         border: '1px solid lightgrey',
         borderRadius: '1em',
-        boxShadow: '.1em .1em .1em lightgrey',
+        boxShadow: '.05em .05em .05em lightgrey',
         '&:hover': {
             boxShadow: '.5em .5em .5em lightgrey',
+            background: 'lightblue',
         },
     },
     video: {
@@ -26,6 +26,10 @@ const useStyles = makeStyles({
         height: '23em',
         padding: '1em',
     },
+    title: {
+        color: 'grey',
+        fontFamily: 'Arial, Helvetica, sans-serif',
+    }
 });
 
 export default function Video(props) {
@@ -34,13 +38,13 @@ export default function Video(props) {
     return (
         <div className={classes.root}>
             <div className={classes.card}>
-                <Typography gutterBottom variant="h5" component="h2">
-                    {video.name}
-                </Typography>
                 <div className={classes.video}>
                     <ReactPlayer url={video.url} light={true} controls={true} width={'auto'}/>
                 </div>
-                <VideoRating/>
+                <div className={classes.title}>
+                    <h3>{video.name}</h3>
+                </div>
+                <VideoRating/><br/>
             </div>
         </div>
     );

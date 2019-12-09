@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
         width: '7em',
         height: '4em',
         '&:hover': {
-            border: '2px solid #2c57b2',
+            border: '2px solid lightblue',
         }
     },
     formControl: {
