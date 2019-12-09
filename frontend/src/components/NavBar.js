@@ -17,6 +17,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import DehazeIcon from '@material-ui/icons/Dehaze';
+import Loading from "./Loading";
 
 const useStyles = makeStyles(theme => ({
     navbar: {
@@ -123,6 +124,7 @@ export default function NavBar() {
                         <Typography className={classes.title} variant="h5" noWrap>KidTube</Typography>
                         <SortSelect/>
                         <Search/>
+                        <Loading className={classes.loading}/>
                     </Toolbar>
                 </AppBar>
             </div>

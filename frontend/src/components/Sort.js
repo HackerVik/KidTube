@@ -37,8 +37,7 @@ export default function Sort() {
     return (
         <div>
             <form>
-                <select className={classes.root} onClick={(event) => handleChange(event.target.value)}>
-                    <option value="" selected disabled hidden>Sort by</option>
+                <select defaultValue={"nameasc"} className={classes.root} onClick={(event) => handleChange(event.target.value)}>
                     <option value="nameasc">Name asc</option>
                     <option value="namedesc">Name desc</option>
                     <option value="idasc">Uploaded asc</option>

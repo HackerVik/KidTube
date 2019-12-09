@@ -19,6 +19,12 @@ const useStyles = makeStyles(theme => ({
             border: '2px solid lightblue',
         }
     },
+    hover: {
+        '&:hover': {
+            background: 'lightblue',
+            borderRadius: '1em',
+        },
+      },
 }));
 
 export default function Search() {
@@ -31,10 +37,10 @@ export default function Search() {
     return (
         <div className={classes.root}>
             <form>
-                <InputBase placeholder="Search" onChange={(e) => setSearch(e.target.value)}
+                <InputBase className={classes.hover} placeholder="Search... " onChange={(e) => setSearch(e.target.value)}
                            inputProps={{'aria-label': 'search'}}/>
             </form>
-            <SearchIcon onClick={searchClick}/>
+            <SearchIcon className={classes.hover} onClick={searchClick}/>
         </div>
     );
 }

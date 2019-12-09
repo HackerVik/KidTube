@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
     },
     app: {
-      textAlign: 'center',
+        textAlign: 'center',
     },
 }));
 
