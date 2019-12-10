@@ -3,7 +3,6 @@ import {makeStyles} from '@material-ui/core/styles';
 import ReactPlayer from "react-player";
 import VideoRating from "./VideoRating";
 
-
 const useStyles = makeStyles({
     root: {
         align: 'middle',
