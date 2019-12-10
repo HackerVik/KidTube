@@ -10,12 +10,14 @@ const useStyles = makeStyles(theme => ({
         color: 'grey',
         backgroundColor: '#fff',
         border: '1px solid lightgrey',
-        borderRadius: '.3em',
+        borderRadius: '1em',
         display: 'flex',
         padding: '.7em',
-        width: '7em',
+        width: '10em',
         height: '4em',
+        outline: 'none',
         '&:hover': {
+            borderRadius: '1em',
             border: '2px solid lightblue',
         }
     },
@@ -37,7 +39,7 @@ export default function Sort() {
     return (
         <div>
             <form>
-                <select defaultValue={"nameasc"} className={classes.root} onClick={(event) => handleChange(event.target.value)}>
+                <select className={classes.root} defaultValue={"nameasc"} onClick={(event) => handleChange(event.target.value)}>
                     <option value="nameasc">Name asc</option>
                     <option value="namedesc">Name desc</option>
                     <option value="idasc">Uploaded asc</option>
