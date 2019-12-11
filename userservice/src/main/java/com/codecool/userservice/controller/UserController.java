@@ -3,10 +3,7 @@ package com.codecool.userservice.controller;
 import com.codecool.userservice.modell.UserModell;
 import com.codecool.userservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,5 +20,8 @@ public class UserController {
         return userRepository.findAll();
     }
 
-    ;
+    @GetMapping("/{user}")
+    public UserModell getUser(@PathVariable("user")String user) {
+        return userRepository.findByUsername(user);
+    }
 }
