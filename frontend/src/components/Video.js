@@ -4,32 +4,29 @@ import ReactPlayer from "react-player";
 import VideoRating from "./VideoRating";
 
 const useStyles = makeStyles({
-    root: {
-        align: 'middle',
-        display: 'inline-block',
-        width: '20em',
-    },
-    card: {
-        maxWidth: 'auto',
-        margin: '.5em',
-        border: '1px solid lightgrey',
-        borderRadius: '1em',
-        boxShadow: '.05em .05em .05em lightgrey',
-        '&:hover': {
-            boxShadow: '.5em .5em .5em lightgrey',
-            background: 'lightblue',
+        root: {
+            align: 'middle',
+            display: 'inline-block',
+            width: '20em',
         },
-    },
-    video: {
-        width: '17em',
-        height: '23em',
-        padding: '1em',
-    },
-    title: {
-        color: 'grey',
-        fontFamily: 'Arial, Helvetica, sans-serif',
-    }
-});
+        card: {
+            maxWidth: 'auto',
+            margin: '.5em',
+            border: '1px solid lightgrey',
+            borderRadius: '1em',
+            boxShadow: '.01em .1em .1em lightgrey',
+            '&:hover': {
+                transform: 'scale(1.025, 1.025)',
+                transition: '.1s ease-out 0s',
+                boxShadow: '.5em .5em .5em lightgrey',
+                background: 'lightblue',
+            },
+        },
+        video: {
+            padding: '1em',
+        },
+    })
+;
 
 export default function Video(props) {
     const classes = useStyles();
