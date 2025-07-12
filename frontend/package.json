@@ -20,7 +20,7 @@
     "simple-react-video-thumbnail": "0.0.7",
     "simple-thumbnail": "^1.6.1",
     "styled-components": "^4.4.1",
-    "video-react": "^0.14.1",
+    "video-react": "^0.16.0",
     "video-thumbnail-url": "latest",
     "zxcvbn": "^4.4.2"
   },
