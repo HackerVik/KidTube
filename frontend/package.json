@@ -13,7 +13,7 @@
     "react-native": "^0.62.3",
     "react-native-thumbnail-video": "^0.1.2",
     "react-player": "^1.14.2",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^5.0.1",
     "react-thumbnail": "^1.0.0",
     "react-youtube-playlist": "latest",
     "redux": "^4.0.4",
