@@ -16,7 +16,7 @@
     "react-scripts": "^5.0.1",
     "react-thumbnail": "^1.0.0",
     "react-youtube-playlist": "latest",
-    "redux": "^5.0.0",
+    "redux": "^4.2.1",
     "simple-react-video-thumbnail": "0.0.7",
     "simple-thumbnail": "^1.6.1",
     "styled-components": "^6.0.0",
