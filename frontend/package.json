@@ -8,7 +8,7 @@
     "@material-ui/lab": "^4.0.0-alpha.34",
     "axios": "^0.30.0",
     "react": "^16.12.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^16.12.0",
     "react-iframe": "^1.8.0",
     "react-native": "^0.80.1",
     "react-native-thumbnail-video": "^0.1.2",
